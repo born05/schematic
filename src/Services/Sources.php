@@ -114,9 +114,9 @@ class Sources extends BaseApplication
               $service = Craft::app()->userGroups;
               $method = 'getGroupBy';
               break;
-          case 'commerceManageproducttype':
+          case 'commerce-manageProductType':
               $service = Craft::app()->commerce_productTypes;
-              $method = 'getProductTypeById';
+              $method = 'getProductTypeBy';
               break;
        }
 
