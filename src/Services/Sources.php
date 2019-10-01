@@ -114,6 +114,10 @@ class Sources extends BaseApplication
               $service = Craft::app()->userGroups;
               $method = 'getGroupBy';
               break;
+          case 'commerceManageproducttype':
+              $service = Craft::app()->commerce_productTypes;
+              $method = 'getProductTypeById';
+              break;
        }
 
        if (isset($service) && isset($method) && isset($sourceFrom)) {
